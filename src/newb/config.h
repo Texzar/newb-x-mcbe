@@ -281,4 +281,68 @@
   #undef NL_CLOUD_SHADOW
 #endif
 
+
+/*
+  VERT LEGACY PRESET (lightweight, warm and vivid look)
+  Placed after the subpack config so it always applies.
+  To turn an effect back on, delete its 'guarded undef' below.
+*/
+#define NL_SATURATION 1.25
+#define NL_TINT
+#undef NL_TINT_LOW
+#undef NL_TINT_HIGH
+#define NL_TINT_LOW  vec3(0.35,0.5,0.65)
+#define NL_TINT_HIGH vec3(1.35,0.95,0.55)
+#undef NL_NOON_SUNLIGHT_COL
+#define NL_NOON_SUNLIGHT_COL vec3(1.0,0.82,0.62)
+
+#ifdef NL_RAINBOW
+  #undef NL_RAINBOW
+#endif
+#ifdef NL_AURORA
+  #undef NL_AURORA
+#endif
+#ifdef NL_SHOOTING_STAR
+  #undef NL_SHOOTING_STAR
+#endif
+#ifdef NL_GLOW_SHIMMER
+  #undef NL_GLOW_SHIMMER
+#endif
+#ifdef NL_PLANTS_WAVE
+  #undef NL_PLANTS_WAVE
+#endif
+#ifdef NL_LANTERN_WAVE
+  #undef NL_LANTERN_WAVE
+#endif
+#ifdef NL_UNDERWATER_WAVE
+  #undef NL_UNDERWATER_WAVE
+#endif
+#ifdef NL_WATER_WAVE
+  #undef NL_WATER_WAVE
+#endif
+#ifdef NL_UNDERWATER_STREAKS
+  #undef NL_UNDERWATER_STREAKS
+#endif
+#ifdef NL_LAVA_NOISE
+  #undef NL_LAVA_NOISE
+#endif
+#ifdef NL_WEATHER_SPECK
+  #undef NL_WEATHER_SPECK
+#endif
+#ifdef NL_CLOUD_AURORA_REFLECTION
+  #undef NL_CLOUD_AURORA_REFLECTION
+#endif
+#ifdef NL_RAIN_MIST_OPACITY
+  #undef NL_RAIN_MIST_OPACITY
+#endif
+#ifdef NL_CLOUDY_FOG
+  #undef NL_CLOUDY_FOG
+#endif
+#ifdef NL_ENTITY_EDGE_HIGHLIGHT
+  #undef NL_ENTITY_EDGE_HIGHLIGHT
+#endif
+#ifdef NL_CLOUD_SHADOW
+  #undef NL_CLOUD_SHADOW
+#endif
+
 #endif
