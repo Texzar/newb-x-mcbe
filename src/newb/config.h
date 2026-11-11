@@ -287,14 +287,21 @@
   Placed after the subpack config so it always applies.
   To turn an effect back on, delete its 'guarded undef' below.
 */
-#define NL_SATURATION 1.25
+#define NL_SATURATION 1.05
+#define NL_EXPOSURE 1.25
+#undef NL_GAMMA
+#define NL_GAMMA 1.45
+#undef NL_SHADOW_INTENSITY
+#define NL_SHADOW_INTENSITY 0.5
+#undef NL_MIN_LIGHTING_BOOST
+#define NL_MIN_LIGHTING_BOOST 2.2
 #define NL_TINT
 #undef NL_TINT_LOW
 #undef NL_TINT_HIGH
-#define NL_TINT_LOW  vec3(0.35,0.5,0.65)
-#define NL_TINT_HIGH vec3(1.35,0.95,0.55)
+#define NL_TINT_LOW  vec3(0.95,0.95,0.9)
+#define NL_TINT_HIGH vec3(1.2,1.1,0.8)
 #undef NL_NOON_SUNLIGHT_COL
-#define NL_NOON_SUNLIGHT_COL vec3(1.0,0.82,0.62)
+#define NL_NOON_SUNLIGHT_COL vec3(1.0,0.88,0.7)
 
 #ifdef NL_RAINBOW
   #undef NL_RAINBOW
